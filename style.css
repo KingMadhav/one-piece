@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: azure;
+}
+.contain{
+    height: max-content ;
+}
+.container {
+    height: 100vh;
+}
+
+.nav {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 0 10%;
+}
+
+.main h1 {
+    text-transform: capitalize;
+    align-items: center;
+    /* color: rgb(55, 192, 62); */
+    font-size: 150px;
+    line-height: 90%;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 70%;
+    margin-left: 12%;
+}
+
+.main :nth-child(1) {
+    margin-top: 15%;
+    font-size: 125px;
+}
+
+.main :nth-child(2),
+.main :nth-child(3) {
+    text-align: center;
+}
+img {
+    left: 38%;
+}
+
+.luffy {
+    color: red;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.zoro {
+    color: green;
+}
+.sanji{
+    color: yellow;
+}
+.usopp{
+    color: rgb(87, 28, 28);
+}
+.images {
+    z-index: 1;
+}
+.img1 {
+    rotate: -15deg;
+}
+.img2 {
+    rotate: -10deg;
+}
+.img3 {
+    rotate: -5deg;
+}
+.img4 {
+    rotate: 0deg;
+}
+a:link,
+a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: wheat;
+}
+
+@media screen and (max-width:480px) {
+
+    .part {
+        font-size: 8px;
+        margin-right: 30%;
+    }
+    .main h1 {
+        color: rgb(55, 192, 192);
+        font-size: 60px;
+        font-weight: 300;
+        width: 70%;
+    }
+    .main :nth-child(1) {
+        margin-top: 55%;
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:1240px) {
+
+    .part {
+        font-size: 15px;
+        padding: 0 10%;
+    }
+
+    .main h1 {
+        font-size: 70px;
+        font-weight: 300;
+    }
+
+    .main :nth-child(1) {
+        font-size: 55px;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 175px;
+        height: 175px;
+        border-radius: 15px;
+    }
+}
